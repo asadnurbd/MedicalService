@@ -74,10 +74,10 @@
 
 
                 <!-- HALF MENU -->
-                <li aria-haspopup="true" class="nl-simple header-btn" ><a href="#">Covid-19 <span class="wsarrow"></span></a>
+                <li aria-haspopup="true" class="nl-simple header-btn" ><a href="../covid_19.php">Covid-19 <span class="wsarrow"></span></a>
                     <ul class="sub-menu">
-                        <li aria-haspopup="true"><a href="demo-1.html">PCR Test</a></li>
-                        <li aria-haspopup="true"><a href="demo-2.html">Probability Test</a></li>
+                        <li aria-haspopup="true"><a href="../pcr_test.php">PCR Test</a></li>
+                        <li aria-haspopup="true"><a href="../probability.php">Probability Test</a></li>
                         
                         
                     </ul>

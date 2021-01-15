@@ -150,7 +150,7 @@
 								</ul>
 
 								<!-- Pricing Table Button  -->
-								<a href="#" class="btn btn-md btn-blue blue-hover">Seek Blood</a>
+								<a href="donate_seek_blood.php" class="btn btn-md btn-blue blue-hover">Seek Blood</a>
 												
 							</div>
 						</div>	<!-- END PRICING TABLE #1 -->
@@ -177,7 +177,7 @@
 								</ul>
 
 								<!-- Pricing Table Button  -->
-								<a href="#" class="btn btn-md btn-blue blue-hover">Donate Blood </a>
+								<a href="donate_seek_blood.php" class="btn btn-md btn-blue blue-hover">Donate Blood </a>
 
 												
 							</div>
