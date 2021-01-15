@@ -60,7 +60,7 @@
 				      	<li id="slide-1">
 
 					        <!-- Background Image -->
-				        	<img src="img/cov_2.jpg" alt="slide-background">
+				        	<img src="img/corona-virus.jpg" alt="slide-background">
 
 							<!-- Image Caption -->
 		       				<div class="caption d-flex align-items-center right-align">
@@ -101,7 +101,7 @@
 				      	<li id="slide-2">
 
 				        	<!-- Background Image -->
-				        	<img src="img/cov_2.jpg" alt="slide-background">
+				        	<img src="img/corona-virus.jpg" alt="slide-background">
 
 							<!-- Image Caption -->
 	        				<div class="caption d-flex align-items-center right-align">
@@ -131,7 +131,7 @@
 				      	<li id="slide-3">
 
 				      		<!-- Background Image -->
-				        	<img src="img/cov_2.jpg" alt="slide-background">
+				        	<img src="img/corona-virus.jpg" alt="slide-background">
 
 				        	<!-- Image Caption -->
 		       			 	<div class="caption d-flex align-items-center right-align">
@@ -171,6 +171,104 @@
 
 
 			</section>	<!-- END HERO-11 -->
+
+			<section id="about-1" class="about-section division">
+				<div class="container">
+					<div class="row d-flex align-items-center">
+
+
+						<!-- ABOUT BOX #1 -->
+						<div id="abox-1" class="col-md-6 col-lg-3">
+							<div class="abox-1 white-color">
+
+								<!-- Title -->
+								<h5 class="h5-md">Testing Time</h5>
+
+								<!-- Table -->
+								<table class="table white-color">
+									<tbody>
+									    <tr>
+									      	<td>Mon – Wed</td>
+									      	<td> - </td>
+									      	<td class="text-right">9:00 AM - 7:00 PM</td>
+									    </tr>
+									    <tr>
+									      	<td>Thursday</td>
+									      	<td> - </td>
+									      	<td class="text-right">9:00 AM - 6:30 PM</td>
+									    </tr>
+									     <tr>
+									      	<td> Sun - Sun</td>
+									      	<td> - </td>
+									      	<td class="text-right">9:00 AM - 6:00 PM</td>
+									    </tr>
+									    <tr class="last-tr">
+									      	<td>Friday</td>
+									      	<td>-</td>
+									      	<td class="text-right">CLOSED</td>
+									   	 </tr>
+									  </tbody>
+								</table>
+
+							</div>
+						</div>
+
+
+						<!-- ABOUT BOX #2 -->
+						<div id="abox-2" class="col-md-6 col-lg-3">
+							<div class="abox-1 white-color">
+
+								<h5 class="h5-md">PCR TEST</h5>
+
+								<!-- Text -->
+								<p>
+								We constantly process group PCR test demands, so you can place your order and get your appointments .
+								</p>
+
+								<!-- Button -->
+								<a href="pcr_test.php" class="btn btn-sm btn-tra-white mt-25">PCR TEST</a>
+
+							</div>
+						</div>
+
+
+						<!-- ABOUT BOX #3 -->
+						<div id="abox-3" class="col-md-6 col-lg-3">
+							<div class="abox-1 white-color">
+
+								<!-- Title -->
+								<h5 class="h5-md">PROBABILITY TEST</h5>
+
+								<!-- Text -->
+								<p>
+									On this website you can find information and guidance from WHO regarding the current outbreak of coronavirus disease  .
+								</p>
+
+								<!-- Button -->
+								<a href="probability.php" class="btn btn-sm btn-tra-white mt-25">PROBABILITY TEST</a>
+
+							</div>
+						</div>
+
+
+						<!-- ABOUT BOX #4 -->
+						<div id="abox-4" class="col-md-6 col-lg-3">
+							<div class="abox-1 white-color">
+
+								<!-- Title -->
+								<h5 class="h5-md">Emergency Cases</h5>
+
+								<!-- Text -->
+								<h5 class="h5-lg emergency-call"><i class="fas fa-phone"></i> 01689302597</h5>
+							
+
+							</div>
+						</div>
+
+
+					</div>    <!-- End row -->
+				</div>	   <!-- End container -->	
+			</section>
 
 
 

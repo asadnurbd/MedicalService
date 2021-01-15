@@ -114,9 +114,7 @@
 				                                   purus and pretium at lorem primis in orci integer
 												</p>
 
-												<!-- Button -->
-												<a href="all-doctors.html" class="btn btn-blue blue-hover">Meet the Doctors</a>
-
+												
 											</div>	
 				         				</div>
 									</div>  <!-- End row -->
@@ -130,7 +128,7 @@
 				      	<li id="slide-3">
 
 				      		<!-- Background Image -->
-				        	<img src="images/slider/slide-9.jpg" alt="slide-background">
+				        	<img src="img/cover_4.jpg" alt="slide-background">
 
 				        	<!-- Image Caption -->
 		       			 	<div class="caption d-flex align-items-center left-align">
@@ -159,9 +157,7 @@
 													</p>		
 												</div>
 
-												<!-- Button -->
-												<a href="who-we-are.html" class="btn btn-blue blue-hover">Discover More</a>
-
+											
 											</div>
 					        			</div>
 									</div>  <!-- End row -->
