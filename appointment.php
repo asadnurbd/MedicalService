@@ -91,9 +91,14 @@ if(isset($_POST["email"]))
 }
 .nav-item{
 
-    width: 15%;
-    margin-left: 20px;
+    width:8%;
    
+    padding-left:5px;
+   
+}
+.nav{
+    
+    list-style: none;
 }
   </style>
 
@@ -211,17 +216,17 @@ if(isset($_POST["email"]))
                                 <br />
                                 <?php echo $message; ?>
                                 <form method="post" class="form-group" id="register_form">
-                                    <div style="margin-left:70px; margin-bottom:10%; ">
+                                    <div style="margin-bottom:10%;  margin-left: 80px; ">
                                     <ul class="nav nav-tabs">
                                     <li class="nav-item" >
-                                    <a class="nav-link active_tab1" style="border:1px solid #ccc; border-radius:80%;" id="list_login_details" >1</a>
+                                    <a class="nav-link active_tab1" style="border:1px solid #ccc; border-radius:100%;" id="list_login_details" >1</a>
                                     <span class="font-size: 1.2rem;">Patient
                                         Information
                                         </span>
                                      </li>
 
-                                    <li class="nav-item">
-                                    <a class="nav-link " style="border-bottom: 2px solid #34ebb4;" id="list_login_details" ></a>
+                                    <li class="nav">
+                                    <a class="nav-link " style="border-bottom: 2px solid #34ebb4; width:200px;margin-left:0px;" id="list_login_details" ></a>
                                     </li>
                                     <li class="nav-item">
                                     <a class="nav-link inactive_tab1" id="list_personal_details" style="border:1px solid #ccc; border-radius:100%;">2</a>
@@ -229,8 +234,8 @@ if(isset($_POST["email"]))
 Appointment
 Details</span>
                                     </li>
-                                    <li class="nav-item">
-                                    <a class="nav-link " style="border-bottom: 2px solid #34ebb4;" id="list_login_details" ></a>
+                                    <li class="nav">
+                                    <a class="nav-link " style="border-bottom: 2px solid #34ebb4; width:200px;" id="list_login_details" ></a>
                                     </li>
                                     <li class="nav-item">
                                     <a class="nav-link inactive_tab1" id="list_contact_details" style="border:1px solid #ccc; border-radius:100%;">3</a>
@@ -247,7 +252,7 @@ Information
                                     <div class="panel panel-default">
                                     <div class="panel-heading">Login Details</div>
                                     <div class="panel-body">
-                                        
+
                                     <div class="form-group">
                                         <label>Enter Email Address</label>
                                         <input type="text" name="email" id="email" class="form-control" />
@@ -372,7 +377,7 @@ Information
 								<img src="images/footer-logo-white.png" width="180" height="40" alt="footer-logo">
 
 								<!-- Text -->	
-								<p class="p-sm mt-20">Aliquam orci nullam tempor sapien gravida donec an enim ipsum porta
+								<p class="p-sm mt-20 display-1" >Aliquam orci nullam tempor sapien gravida donec an enim ipsum porta
 								   justo at velna auctor congue
 								</p>  
 
@@ -516,22 +521,7 @@ Information
 			new WOW().init();
 		</script>
 
-		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-		<!-- [if lt IE 9]>
-			<script src="js/html5shiv.js" type="text/javascript"></script>
-			<script src="js/respond.min.js" type="text/javascript"></script>
-		<![endif] -->
-
-		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->	
-		<!--
-		<script>
-			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-			ga('create', 'UA-XXXXX-Y', 'auto');
-			ga('send', 'pageview');
-		</script>
-		<script async src='https://www.google-analytics.com/analytics.js'></script>
-		-->
-		<!-- End Google Analytics -->
+	
 
 		<script src="js/changer.js"></script>
         <script defer src="js/styleswitch.js"></script>	
@@ -730,7 +720,4 @@ $(document).ready(function(){
 	</body>
 
 
-
-
-<!-- Mirrored from jthemes.net/themes/html/medservices/files/appointment.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Jan 2021 04:10:23 GMT -->
 </html>	
