@@ -67,7 +67,7 @@
 
 
                 <!-- PAGES -->
-                <li class="nl-simple header-btn" aria-haspopup="true"><a href="#">Diagnostic Centres <span ></span></a>
+                <li class="nl-simple header-btn" aria-haspopup="true"><a href="diagnostic _Centres.php">Diagnostic Centres <span ></span></a>
                   
                     <!-- End wsmegamenu -->
                 </li>
@@ -92,7 +92,7 @@
 
 
                 <!-- MEGAMENU -->
-                <li aria-haspopup="true" class="nl-simple header-btn"><a href="#">Share Blood <span class=""></span></a>
+                <li aria-haspopup="true" class="nl-simple header-btn"><a href="share_blood.php">Share Blood <span class=""></span></a>
                     
                     <!-- End wsmegamenu -->
                 </li>
@@ -100,7 +100,7 @@
 
 
                 <!-- SIMPLE NAVIGATION LINK -->
-                <li class="nl-simple header-btn" aria-haspopup="true" ><a href="#">Contact Us</a></li>
+                <li class="nl-simple header-btn" aria-haspopup="true" ><a href="contacts.php">Contact Us</a></li>
 
                 <!-- NAVIGATION MENU BUTTON -->
                

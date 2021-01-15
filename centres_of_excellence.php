@@ -1,16 +1,7 @@
 <!DOCTYPE html>
-<!-- MedService - Medical & Medical Health Landing Page Template design by Jthemes -->
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
+
 <html lang="en">
 
-
-
-
-	
-<!-- Mirrored from jthemes.net/themes/html/medservices/files/gallery.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Jan 2021 04:10:25 GMT -->
 <head>
 <?php include"include/head.php"?>
 	
@@ -30,33 +21,6 @@
 			<div id="loader"><div class="loader-inner"></div></div>
 		</div>
 
-
-
-
-		<!-- STYLE SWITCHER
-		============================================= -->
-		<div id="stlChanger">
-			<div class="blockChanger bgChanger">
-            	<a href="#" class="chBut"><i class="fas fa-sliders-h"></i></a>
-                <div class="chBody">														
-					<div class="stBlock text-center" style="margin:30px 20px 30px 16px">
-						<p>Choose Layout</p>
-						<a class="s_1" href="demo-1.html"><img src="images/color-scheme/l-01.jpg" width="175" height="120" alt="layout-image"></a>
-						<a class="s_1" href="demo-2.html"><img src="images/color-scheme/l-02.jpg" width="175" height="93" alt="layout-image"></a>
-						<a class="s_1" href="demo-3.html"><img src="images/color-scheme/l-03.jpg" width="175" height="105" alt="layout-image"></a>
-						<a class="s_1" href="demo-4.html"><img src="images/color-scheme/l-04.jpg" width="175" height="100" alt="layout-image"></a>
-						<a class="s_1" href="demo-5.html"><img src="images/color-scheme/l-05.jpg" width="175" height="112" alt="layout-image"></a>
-						<a class="s_1" href="demo-6.html"><img src="images/color-scheme/l-06.jpg" width="175" height="100" alt="layout-image"></a>
-						<a class="s_1" href="demo-7.html"><img src="images/color-scheme/l-07.jpg" width="175" height="97" alt="layout-image"></a>
-						<a class="s_1" href="demo-8.html"><img src="images/color-scheme/l-08.jpg" width="175" height="91" alt="layout-image"></a>
-						<a class="s_1" href="demo-9.html"><img src="images/color-scheme/l-09.jpg" width="175" height="97" alt="layout-image"></a>
-						<a class="s_1" href="demo-10.html"><img src="images/color-scheme/l-10.jpg" width="175" height="105" alt="layout-image"></a>
-						<a class="s_1" href="demo-11.html"><img src="images/color-scheme/l-11.jpg" width="175" height="105" alt="layout-image"></a>
-						<a class="s_1" href="demo-12.html"><img src="images/color-scheme/l-12.jpg" width="175" height="125" alt="layout-image"></a>
-					</div>						
-				</div>
-			</div>
-		</div>	  <!-- END SWITCHER -->
 
 
 
@@ -110,7 +74,7 @@
 				<div class="container">
 					<div class="row col-lg-12 pb-5">
 						<h2>Centres of Excellence :</h2>
-						<div class="card">
+						
 							<div class="card-text">
 							<p >
 				            center of excellence (COE) is a team, a shared facility or an entity that provides leadership, best practices, research, support and/or training for a focus area.
@@ -118,7 +82,7 @@
 Due to its broad usage and vague legal precedent, a "center of excellence" in one context may have completely different characteristics from another. The focus area might be a technology (e.g. Java), a business concept (e.g. BPM), a skill (e.g. negotiation) or a broad area of study (e.g. women's health). A center of excellence may also be aimed at revitalizing stalled initiatives.[1] The term may also refer to a network of institutions collaborating with each other to pursue excellence in a particular area.[2] (e.g. the Rochester Area Colleges Center for Excellence in Math and Science). In contrast, in the European defense community, the European Centre of Excellence for Countering Hybrid Threats is a response to hybrid warfare on its periphery; the CoE seeks to inform, and also protect its non-NATO components, as well as its non-PESCO members.[3]
 						 </p>
 							</div>
-						</div>
+						
                     
 
 					</div>
@@ -135,23 +99,28 @@ Due to its broad usage and vague legal precedent, a "center of excellence" in on
 
 
 								<!-- IMAGE #1 -->
-							  	<div class="gallery-item dental">
-								  <a href="centres_of_excellence/Cardiology.php">	  
-									<div class="hover-overlay"> 
-
-										<!-- Gallery Image -->
-										<div class="card text-white bg-danger" style="max-width: 30rem;">
+								<div class="gallery-item dental">
+								  <a href="centres_of_excellence/Cardiology.php">
+									<div class="hover-overlay">
+									<div class="card h-100 text-white bg-danger " style="max-width: 30rem; max-height:30rem;">
 										<div class="card-header">Cardiology</div>
 										<div class="card-body">
 											<h5 class="card-title">Cardiology</h5>
-											<span><i class="fa fa-head-side-brain"></i></span>
 										</div>
-										</div>	
+										</div>	 
+
+										<!-- Gallery Image -->
 										<img class="img-fluid" src="img/heart-surgery.jpg" alt="galley-image" />			
 										<div class="item-overlay"></div>
+
+											
+																		
+
 									</div>	
-									</a>
-								</div>	<!-- END IMAGE #1 -->	
+								  </a>
+								</div>
+
+							  	
 								<!-- IMAGE #1 -->
 							  	<div class="gallery-item dental">
 								  <a href="centres_of_excellence/orthopedics.php">

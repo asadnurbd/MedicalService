@@ -21,32 +21,6 @@
 
 
 
-    <!-- STYLE SWITCHER
-		============================================= -->
-    <div id="stlChanger">
-        <div class="blockChanger bgChanger">
-            <a href="#" class="chBut"><i class="fas fa-sliders-h"></i></a>
-            <div class="chBody">
-                <div class="stBlock text-center" style="margin:30px 20px 30px 16px">
-                    <p>Choose Layout</p>
-                    <a class="s_1" href="demo-1.html"><img src="images/color-scheme/l-01.jpg" width="175" height="120" alt="layout-image"></a>
-                    <a class="s_1" href="demo-2.html"><img src="images/color-scheme/l-02.jpg" width="175" height="93" alt="layout-image"></a>
-                    <a class="s_1" href="demo-3.html"><img src="images/color-scheme/l-03.jpg" width="175" height="105" alt="layout-image"></a>
-                    <a class="s_1" href="demo-4.html"><img src="images/color-scheme/l-04.jpg" width="175" height="100" alt="layout-image"></a>
-                    <a class="s_1" href="demo-5.html"><img src="images/color-scheme/l-05.jpg" width="175" height="112" alt="layout-image"></a>
-                    <a class="s_1" href="demo-6.html"><img src="images/color-scheme/l-06.jpg" width="175" height="100" alt="layout-image"></a>
-                    <a class="s_1" href="demo-7.html"><img src="images/color-scheme/l-07.jpg" width="175" height="97" alt="layout-image"></a>
-                    <a class="s_1" href="demo-8.html"><img src="images/color-scheme/l-08.jpg" width="175" height="91" alt="layout-image"></a>
-                    <a class="s_1" href="demo-9.html"><img src="images/color-scheme/l-09.jpg" width="175" height="97" alt="layout-image"></a>
-                    <a class="s_1" href="demo-10.html"><img src="images/color-scheme/l-10.jpg" width="175" height="105" alt="layout-image"></a>
-                    <a class="s_1" href="demo-11.html"><img src="images/color-scheme/l-11.jpg" width="175" height="105" alt="layout-image"></a>
-                    <a class="s_1" href="demo-12.html"><img src="images/color-scheme/l-12.jpg" width="175" height="125" alt="layout-image"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END SWITCHER -->
-
 
 
 
@@ -66,148 +40,142 @@
 
 
         <!-- HERO-3
-			============================================= -->
-        <section id="hero-3" class="hero-section division">
+            ============================================= -->
+            <section id="hero-7" class="hero-section division">
 
 
-            <!-- SLIDER -->
-            <div class="slider blue-nav">
-                <ul class="slides">
+				<!-- SLIDER -->
+				<div class="slider blue-nav">
+			    	<ul class="slides">
 
 
-                    <!-- SLIDE #1 -->
-                    <li id="slide-1">
+				     	<!-- SLIDE #1 -->
+				      	<li id="slide-1">
 
-                        <!-- Background Image -->
-                        <img src="images/slider/slide-11.jpg" alt="slide-background">
+					        <!-- Background Image -->
+				        	<img src="images/slider/slide-7.jpg" alt="slide-background">
 
-                        <!-- Image Caption -->
-                        <div class="caption d-flex align-items-center left-align">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-10 col-md-7 col-lg-6">
-                                        <div class="caption-txt">
+							<!-- Image Caption -->
+		       				<div class="caption d-flex align-items-center left-align">
+		       					<div class="container">
+		       						<div class="row">
+		       							<div class="col-sm-9 col-md-8 col-lg-7 col-xl-6">
+		       								<div class="caption-txt">
 
-                                            <!-- Title -->
-                                            <h2 class="steelblue-color">With a Touch of <span>Kindness</span></h2>
+						       					<!-- Title -->
+						       					<h5 class="blue-color">Welcome to MedService</h5>
+						       					<h2 class="steelblue-color">Healthy smile you deserve</h2>
 
-                                            <!-- Text -->
-                                            <p class="p-md">Feugiat primis ligula risus auctor egestas augue mauri viverra tortor in iaculis and placerat purus feugiat primis ultrice in ligula impedit magna purus at pretium
-                                            </p>
+						       					<!-- CONTENT BOX #1 -->
+												<div class="box-list">							
+													<div class="box-list-icon"><i class="fas fa-genderless"></i></div>
+													<p class="p-md">Fringilla risus nec, luctus mauris auctor purus sapien 
+													   euismod pretium purus at pretium ligula rutrum euismod
+													</p>							
+												</div>
+													
+												<!-- CONTENT BOX #3 -->
+												<div class="box-list">	
+													<div class="box-list-icon"><i class="fas fa-genderless"></i></div>
+													<p class="p-md">Nemo ipsam egestas volute turpis dolores luctus aliquam 
+													   and quaerat sodales at sapien undo pretium purus feugiat
+													</p>				
+												</div>	        
 
-                                            <!-- Button -->
-                                            <a href="about-us.html" class="btn btn-md btn-blue blue-hover">More About Clinic</a>
+											</div>
+										</div>
+									</div>  <!-- End row -->
+								</div>  <!-- End container -->
+					        </div>	<!-- End Image Caption -->
 
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End row -->
-                            </div>
-                            <!-- End container -->
-                        </div>
-                        <!-- End Image Caption -->
-
-                    </li>
-                    <!-- END SLIDE #1 -->
-
-
-                    <!-- SLIDE #2 -->
-                    <li id="slide-2">
-
-                        <!-- Background Image -->
-                        <img src="images/slider/slide-12.jpg" alt="slide-background">
-
-                        <!-- Image Caption -->
-                        <div class="caption d-flex align-items-center right-align">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-10 col-md-7 col-lg-6">
-                                        <div class="caption-txt">
-
-                                            <!-- Title -->
-                                            <h2 class="steelblue-color"><span>Child Care</span> Treatments</h2>
-
-                                            <!-- CONTENT BOX #1 -->
-                                            <div class="box-list">
-                                                <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
-                                                <p class="p-md">Fringilla risus nec, luctus mauris orci auctor purus euismod pretium purus at pretium ligula rutrum
-                                                </p>
-                                            </div>
-
-                                            <!-- CONTENT BOX #2 -->
-                                            <div class="box-list">
-                                                <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
-                                                <p class="p-md">Quaerat sodales sapien undo euismod risus auctor egestas augue mauri viverra tortor sapien
-                                                </p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End row -->
-                            </div>
-                            <!-- End container -->
-                        </div>
-                        <!-- End Image Caption -->
-
-                    </li>
-                    <!-- END SLIDE #2 -->
+					    </li>	<!-- END SLIDE #1 -->
 
 
-                    <!-- SLIDE #3 -->
-                    <li id="slide-3">
+				      	<!-- SLIDE #2 -->
+				      	<li id="slide-2">
 
-                        <!-- Background Image -->
-                        <img src="images/slider/slide-13.jpg" alt="slide-background">
+				        	<!-- Background Image -->
+				        	<img src="images/slider/slide-8.jpg" alt="slide-background">
 
-                        <!-- Image Caption -->
-                        <div class="caption d-flex align-items-center left-align">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-10 col-md-7 col-lg-6">
-                                        <div class="caption-txt">
+							<!-- Image Caption -->
+	        				<div class="caption d-flex align-items-center left-align">
+	        					<div class="container">
+		       						<div class="row">
+		       							<div class="col-sm-9 col-md-8 col-lg-7 col-xl-6">
+		       								<div class="caption-txt">
 
-                                            <!-- Title -->
-                                            <h2 class="steelblue-color"><span>Newborn</span> Care Services</h2>
+					        					<!-- Title -->
+					        					<h5 class="blue-color">Friendly, caring dental services</h5>
+								         	 	<h2 class="steelblue-color">High-class professionals</h2>
+									          	
+									          	<!-- Text -->
+									          	<p class="p-md">Feugiat primis ligula risus auctor egestas augue mauri viverra
+				                                   tortor in iaculis placerat eugiat mauris ipsum in viverra tortor and gravida
+				                                   purus and pretium at lorem primis in orci integer
+												</p>
 
-                                            <!-- Option Box #1 -->
-                                            <div class="box-list">
-                                                <div class="box-list-icon blue-color"><i class="fas fa-angle-double-right"></i></div>
-                                                <p class="p-md">Fringilla risus nec, luctus mauris orci auctor purus euismod pretium purus pretium ligula rutrum tempor
-                                                </p>
-                                            </div>
+												<!-- Button -->
+												<a href="all-doctors.html" class="btn btn-blue blue-hover">Meet the Doctors</a>
 
-                                            <!-- Option Box #2 -->
-                                            <div class="box-list">
-                                                <div class="box-list-icon blue-color"><i class="fas fa-angle-double-right"></i></div>
-                                                <p class="p-md">Feugiat primis ultrice in ligula risus auctor tempus impedit</p>
-                                            </div>
+											</div>	
+				         				</div>
+									</div>  <!-- End row -->
+								</div>  <!-- End container -->
+					        </div>	<!-- End Image Caption -->
 
-                                            <!-- Option Box #3 -->
-                                            <div class="box-list">
-                                                <div class="box-list-icon blue-color"><i class="fas fa-angle-double-right"></i></div>
-                                                <p class="p-md">Luctus mauris orci auctor purus euismod pretium purus dolor impedit magna purus at pretium donec
-                                                </p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End row -->
-                            </div>
-                            <!-- End container -->
-                        </div>
-                        <!-- End Image Caption -->
-
-                    </li>
-                    <!-- END SLIDE #3 -->
-
-                </ul>
-            </div>
-            <!-- END SLIDER -->
+				     	</li>	<!-- END SLIDE #2 -->
 
 
-        </section>
+				     	<!-- SLIDE #3 -->
+				      	<li id="slide-3">
+
+				      		<!-- Background Image -->
+				        	<img src="images/slider/slide-9.jpg" alt="slide-background">
+
+				        	<!-- Image Caption -->
+		       			 	<div class="caption d-flex align-items-center left-align">
+		       			 		<div class="container">
+		       						<div class="row">
+		       							<div class="col-sm-9 col-md-8 col-lg-7 col-xl-6">
+		       								<div class="caption-txt">
+
+						       			 		<!-- Title -->
+						       			 		<h5 class="blue-color">Straighter Teeth...Healthier Smile!</h5>
+									        	<h2 class="steelblue-color">We create radiant smiles</h2>
+
+									        	<!-- Option Box #1 -->
+												<div class="box-list">							
+													<div class="box-list-icon blue-color"><i class="fas fa-angle-double-right"></i></div>
+													<p class="p-md">Fringilla risus nec, luctus mauris orci auctor purus euismod 
+													   pretium purus pretium ligula rutrum tempor sapien at ligula
+													</p>						
+												</div>
+
+												<!-- Option Box #2 -->
+												<div class="box-list mb-15">	
+													<div class="box-list-icon blue-color"><i class="fas fa-angle-double-right"></i></div>
+													<p class="p-md">Feugiat primis ultrice in ligula risus auctor tempus feugiat 
+													   impedit dolores ut aliquam quaerat sodales
+													</p>		
+												</div>
+
+												<!-- Button -->
+												<a href="who-we-are.html" class="btn btn-blue blue-hover">Discover More</a>
+
+											</div>
+					        			</div>
+									</div>  <!-- End row -->
+								</div>  <!-- End container -->
+					        </div>	<!-- End Image Caption -->
+
+				     	</li>	<!-- END SLIDE #3 -->
+
+				    </ul>
+			  	</div>	<!-- END SLIDER -->
+
+
+			</section>
+      
         <!-- END HERO-3 -->
 
 
@@ -1963,127 +1931,8 @@
 
         <!-- FOOTER-1
 			============================================= -->
-        <footer id="footer-1" class="bg-image wide-40 footer division">
-            <div class="container">
-
-
-                <!-- FOOTER CONTENT -->
-                <div class="row">
-
-
-                    <!-- FOOTER INFO -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-info mb-40">
-
-                            <!-- Footer Logo -->
-                            <!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 360 x 80  pixels) -->
-                            <img src="images/footer-logo-white.png" width="180" height="40" alt="footer-logo">
-
-                            <!-- Text -->
-                            <p class="p-sm mt-20">Aliquam orci nullam tempor sapien gravida donec an enim ipsum porta justo at velna auctor congue
-                            </p>
-
-                            <!-- Social Icons -->
-                            <div class="footer-socials-links mt-20">
-                                <ul class="foo-socials text-center clearfix">
-
-                                    <li><a href="#" class="ico-facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#" class="ico-twitter"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#" class="ico-google-plus"><i class="fab fa-google-plus-g"></i></a></li>
-                                    <li><a href="#" class="ico-tumblr"><i class="fab fa-tumblr"></i></a></li>
-
-                                    <!--
-										<li><a href="#" class="ico-behance"><i class="fab fa-behance"></i></a></li>	
-										<li><a href="#" class="ico-dribbble"><i class="fab fa-dribbble"></i></a></li>											
-										<li><a href="#" class="ico-instagram"><i class="fab fa-instagram"></i></a></li>	
-										<li><a href="#" class="ico-linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-										<li><a href="#" class="ico-pinterest"><i class="fab fa-pinterest-p"></i></a></li>									
-										<li><a href="#" class="ico-youtube"><i class="fab fa-youtube"></i></a></li>											
-										<li><a href="#" class="ico-vk"><i class="fab fa-vk"></i></a></li>
-										<li><a href="#" class="ico-yelp"><i class="fab fa-yelp"></i></a></li>
-										<li><a href="#" class="ico-yahoo"><i class="fab fa-yahoo"></i></a></li>
-									    -->
-
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- FOOTER CONTACTS -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-box mb-40">
-
-                            <!-- Title -->
-                            <h5 class="h5-xs">Our Location</h5>
-
-                            <!-- Address -->
-                            <p>121 King Street, Melbourne,</p>
-                            <p>Victoria 3000 Australia</p>
-
-                            <!-- Email -->
-                            <p class="foo-email mt-20">E: <a href="mailto:yourdomain@mail.com">hello@yourdomain.com</a></p>
-
-                            <!-- Phone -->
-                            <p>P: +12 9 8765 4321</p>
-
-                        </div>
-                    </div>
-
-
-                    <!-- FOOTER WORKING HOURS -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-box mb-40">
-
-                            <!-- Title -->
-                            <h5 class="h5-xs">Working Time</h5>
-
-                            <!-- Working Hours -->
-                            <p class="p-sm">Mon - Wed - <span>9:00 AM - 7:00 PM</span></p>
-                            <p class="p-sm">Thursday - <span>9:00 AM - 6:30 PM</span></p>
-                            <p class="p-sm">Friday - <span>9:00 AM - 6:00 PM</span></p>
-                            <p class="p-sm">Sat - Sun - <span>Closed</span></p>
-
-                        </div>
-                    </div>
-
-
-                    <!-- FOOTER PHONE NUMBER -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-box mb-40">
-
-                            <!-- Title -->
-                            <h5 class="h5-xs">Emergency Cases</h5>
-
-                            <!-- Footer List -->
-                            <h5 class="h5-xl blue-color">1-800-123-4560</h5>
-
-                            <!-- Text -->
-                            <p class="p-sm mt-15">Aliquam orci nullam undo tempor sapien gravida donec enim ipsum porta justo velna aucto magna
-                            </p>
-
-                        </div>
-                    </div>
-
-
-                </div>
-                <!-- END FOOTER CONTENT -->
-
-
-                <!-- FOOTER COPYRIGHT -->
-                <div class="bottom-footer">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="footer-copyright">&copy; 2019 <span>MedService</span>. All Rights Reserved</p>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-            <!-- End container -->
-        </footer>
+            <?php include"include/footer.php"?>
+        
         <!-- END FOOTER-1 -->
 
 
@@ -2127,22 +1976,7 @@
         new WOW().init();
     </script>
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-    <!-- [if lt IE 9]>
-			<script src="js/html5shiv.js" type="text/javascript"></script>
-			<script src="js/respond.min.js" type="text/javascript"></script>
-		<![endif] -->
-
-    <!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
-    <!--
-		<script>
-			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-			ga('create', 'UA-XXXXX-Y', 'auto');
-			ga('send', 'pageview');
-		</script>
-		<script async src='https://www.google-analytics.com/analytics.js'></script>
-		-->
-    <!-- End Google Analytics -->
+  
 
     <script src="js/changer.js"></script>
     <script defer src="js/styleswitch.js"></script>
@@ -2152,7 +1986,5 @@
 
 
 
-
-<!-- Mirrored from jthemes.net/themes/html/medservices/files/demo-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Jan 2021 04:09:57 GMT -->
 
 </html>
