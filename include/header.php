@@ -41,7 +41,7 @@
 
                 <li>
                 <div class="desktoplogo2">
-                    <a href="index.php"><img src="img/logo.png" width="180" height="40" alt="header-logo"></a>
+                    <a href="index.php"><img src="img/medilife.png" width="200" height="60" alt="header-logo"></a>
                   </div>
                 </li>
                 <!-- DROPDOWN MENU -->

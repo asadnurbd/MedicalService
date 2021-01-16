@@ -49,8 +49,8 @@
 
 
 .desktoplogo2 {
-    padding: 20px 400px 0px 0px;
-    margin: 0;
+    padding: 10px 260px 10px 5px;
+    /* margin-left: 40px; */
     float: left;
 }
 .wsmainwp {
@@ -63,6 +63,20 @@
     padding: 16px 0px 20px 200px;
     margin: 0;
     float: left;
+}
+.wsmainfull {
+    width: 100%;
+    height: 100px;
+    background-color: #fff!important;
+    z-index: 999;
+    -webkit-box-shadow: 0 2px 3px rgba(96, 96, 96, .1);
+    -moz-box-shadow: 0 2px 3px rgba(96, 96, 96, .1);
+    box-shadow: 0 2px 3px rgba(96, 96, 96, .1);
+    -webkit-transition: all 450ms ease-in-out;
+    -moz-transition: all 450ms ease-in-out;
+    -o-transition: all 450ms ease-in-out;
+    -ms-transition: all 450ms ease-in-out;
+    transition: all 450ms ease-in-out;
 }
        </style>
 

@@ -12,12 +12,12 @@
 
 								<!-- Footer Logo -->
 								<!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 360 x 80  pixels) -->
-								<img src="img/logo.png" width="180" height="40" alt="footer-logo">
+								<img src="img/footerlogo.png" style="padding-right:130px;    " width="350" height="60" alt="footer-logo">
 	
 								
 
 								<!-- Social Icons -->
-								<div class="footer-socials-links mt-20">
+								<div class="footer-socials-links mt-20" style="margin-left:20%;">
 									<ul class="foo-socials text-center clearfix">
 
 										<li><a href="#" class="ico-facebook"><i class="fab fa-facebook-f"></i></a></li>
