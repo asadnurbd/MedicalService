@@ -1,3 +1,50 @@
+
+
+<?php 
+
+
+$con=mysqli_connect("localhost","root","");
+$db=mysqli_select_db($con,'nur');
+
+if(isset($_POST['submit'])){
+
+	$names=$_POST['name'];
+	$emails=$_POST['email'];
+	$ages=$_POST['age'];
+	$phones=$_POST['phone'];
+	$addresses=$_POST['address'];
+	$districts=$_POST['district'];
+	$groups=$_POST['group'];
+	$genders=$_POST['gender'];
+ 
+    echo "$names";
+    echo "$emails";
+    echo "$ages";
+    echo "$phones";
+    echo "$addresses";
+    echo "$districts";
+    echo "$groups";
+    echo "$genders";
+ 
+	$blood="INSERT INTO `donate_blood`(`name`,`email`,`age`,`phone`,`address`,`district`,`group`,`gender`) VALUES('$names','$emails','$ages','$phones','$addresses','$districts','$groups','$genders')";
+	 
+	// $data = $con->prepare($blood);
+	$data=mysqli_query($con,$blood);
+	if($data){
+		echo "Data Insert";
+	}else{
+	 echo "Not Insert";
+	}
+	
+ 
+ }
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -7,6 +54,28 @@
 
 		
  <?php include"include/head.php"?>
+
+
+
+ <style>
+	.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 2rem + 2px);
+	padding: .475rem .75rem;
+	margin: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+	 }
+ </style>
 	
 	</head>
 
@@ -73,7 +142,7 @@
 </p>
 								
 						</div>
-					<h4 class="h3-md steelblue-color ml-lg-5 ">Please Fill Up The Form :</h4>	
+					<h4 class="h3-md steelblue-color ml-lg-4 ">Please Fill Up The Form :</h4>	
 
 					</div>
 
@@ -87,38 +156,74 @@
 						<!-- CONTACT FORM -->	
 				 		<div class="col-md-7 col-lg-12 pt-5">
 				 			<div class="form-holder mb-40">
-				 				<form name="contactForm" class="row contact-form">
+				 				<form  method="POST" class="row " id="form-content">
 				                                            
 					                <!-- Contact Form Input -->
 					                <div id="input-name" class="col-md-12 col-lg-4">
 					                	<input type="text" name="name" class="form-control name" placeholder="Enter Your Name*" required> 
-					                </div>
-					                <div id="input-age" class="col-md-12 col-lg-4">
-					                	<input type="text" name="age" class="form-control name" placeholder="Enter Your Age*" required> 
-					                </div>
-					                <div id="input-gender" class="col-md-12 col-lg-4">
-					                	<input type="text" name="gender" class="form-control name" placeholder="Enter Your Gender*" required> 
-					                </div>
-					                        
-					                <div id="input-address" class="col-md-12 col-lg-4">
-					                	<input type="text" name="address" class="form-control email" placeholder="Enter Your Address*" required> 
-					                </div>
-					                <div id="input-district" class="col-md-12 col-lg-4">
-					                	<input type="text" name="district" class="form-control email" placeholder="Enter Your District*" required> 
-					                </div>
-					                <div id="input-group" class="col-md-12 col-lg-4">
-					                	<input type="text" name="group" class="form-control email" placeholder="Enter Your Blood Group*" required> 
-					                </div>
-					                <div id="input-email" class="col-md-12 col-lg-6">
+									</div>
+									<div id="input-email" class="col-md-12 col-lg-4">
 					                	<input type="text" name="email" class="form-control email" placeholder="Enter Your Email*" required> 
 					                </div>
-
-					                <div id="input-phone" class="col-md-12 col-lg-6">
+									
+					                <div id="input-age" class="col-md-12 col-lg-4">
+					                	<input type="text" name="age" class="form-control name" placeholder="Enter Your Age*" required> 
+									</div>
+									
+									<div id="input-phone" class="col-md-12 col-lg-6">
 					                	<input type="tel" name="phone" class="form-control phone" placeholder="Enter Your Phone Number*" required> 
-					                </div>	
+									</div>
+					                        
+					                <div id="input-address" class="col-md-12 col-lg-6">
+					                	<input type="text" name="address" class="form-control " placeholder="Enter Your Address*" required> 
+					                </div>
+					                <div id="input-district" class="col-md-12 col-lg-6">
+					                	<input type="text" name="district" class="form-control " placeholder="Enter Your District*" required> 
+									</div>
+									
+
+					                
+					                
+									
+									<div id="input-patient" class="col-md-12 col-lg-6 input-patient ">
+					                    <select id="inlineFormCustomSelect3" name="group" class="custom-select patient form-control" required="">
+					                        <option>Enter Your Blood Group*</option>
+											<option value="A+">A+</option>
+											<option value="AB+">AB+</option>
+											<option value="A-">A-</option>
+											<option value="AB-">AB-</option>
+											<option value="O+">O+</option>
+											<option value="O-">O-</option>
+											<option value="B+">B+</option>
+											<option value="B-">B-</option>
+					                    </select>
+									</div>
+									
+					             	
+					                <div id="input-phone" class="col-md-12 col-lg-4 ml-2 mt-2">
+					                	<div class="row ml-lg-1">
+											<p>Gender :</p>
+											<div class="ml-lg-4">
+											<input class="form-check-input" type="radio" name="gender" id="exampleRadios1" value="male" checked required>
+											<label class="form-check-label" for="exampleRadios1">
+												Male
+                                            </label>
+
+											</div>
+											<div class="ml-lg-4">
+											<input class="form-check-input" type="radio" name="gender" id="exampleRadios1" value="female" checked>
+											<label class="form-check-label" for="exampleRadios1">
+												Female 
+                                            </label>
+
+											</div>		
+										</div>
+									</div>	
+									
+								
 		                <!-- Contact Form Button -->
-					                <div class="col-lg-12 mt-15 form-btn">  
-					                	<button type="submit" class="btn btn-blue blue-hover submit">Send Your Message</button> 
+					                <div class="col-lg-12 mt-15 form-btn ml-2">  
+					                	<input type="submit" class="btn btn-blue blue-hover submit" name="submit" value="Send Your Message">
 					                </div>
 					                                                              
 					                <!-- Contact Form Message -->
@@ -179,14 +284,27 @@
 									    </tr>
 									</thead>
 									<tbody>
+										<?php 
+										 $show="SELECT* from donate_blood";
+										 $result=$con->query($show);
+										 $i=1;
+										 if($result->num_rows>0){
+											 while($row=$result->fetch_array()){
+																			
+										
+										
+									?>
 									    <tr>
-									      	<th scope="row">1</th>
-									     	<td>X-Ray</td>
-									     	<td>X-Ray</td>
-									     	<td>X-Ray</td>
-									     	<td>X-Ray</td>
-									      	<td>From <span>$325.00</span></td>
-									    </tr>
+									      	<th scope="row"><?php echo $i++;?></th>
+											 <td><?php echo $row["name"];?></td>
+											 <td><?php echo $row["district"];?></td>
+									     	<td><?php echo $row["group"];?></td>
+									     	<td><?php echo $row["age"];?></td>
+									     	<td><?php echo $row["phone"];?></td>
+									     	
+									     	
+										</tr>
+										<?php }}?>
 									   
 									</tbody>
 								</table>

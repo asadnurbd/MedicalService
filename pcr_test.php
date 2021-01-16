@@ -91,7 +91,7 @@
 
 								<!-- Buttons -->
 								<div class="doctor-photo-btn text-center">
-									<a href="appointment.html" class="btn btn-md btn-blue blue-hover">Book an Appointment</a>
+									<a href="probability.php" class="btn btn-md btn-blue blue-hover">Probability Test</a>
 								</div>
 
 			 				</div>
