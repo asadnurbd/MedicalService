@@ -12,7 +12,7 @@
 
 								<!-- Footer Logo -->
 								<!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 360 x 80  pixels) -->
-								<img src="images/footer-logo-white.png" width="180" height="40" alt="footer-logo">
+								<img src="../img/logo.png" width="180" height="40" alt="footer-logo">
 	
 								
 
@@ -47,7 +47,7 @@
 								<p>Dhaka , Bangladesh,</p> 
 								
 								<!-- Email -->
-								<p class="foo-email mt-20">E: <a href="mailto:yourdomain@mail.com">hello@medService.com</a></p>
+								<p class="foo-email mt-20">E: <a href="mailto:yourdomain@mail.com">hello@mediqas.com</a></p>
 
 								<!-- Phone -->
 								<p>P: +01689302597,01679599605</p>
@@ -97,7 +97,7 @@
 					<div class="bottom-footer">
 						<div class="row">
 							<div class="col-md-12">
-								<p class="footer-copyright">&copy; 2021 <span>MedService</span>. All Rights Reserved</p>
+								<p class="footer-copyright">&copy; 2021 <span>Mediqas</span>. All Rights Reserved</p>
 							</div>
 						</div>
 					</div>

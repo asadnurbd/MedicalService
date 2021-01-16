@@ -4,7 +4,7 @@
 <!-- MOBILE HEADER -->
 <div class="wsmobileheader clearfix">
     <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
-    <span class="smllogo"><img src="images/logo-grey.png" width="180" height="40" alt="mobile-logo"/></span>
+    <span class="smllogo"><img src="../img/logo-grey.png" width="180" height="40" alt="mobile-logo"/></span>
     <a href="tel:123456789" class="callusbtn"><i class="fas fa-phone"></i></a>
 </div>
 
@@ -41,7 +41,7 @@
 
                 <li>
                 <div class="desktoplogo2">
-                    <a href="../index.php"><img src="images/logo-grey.png" width="180" height="40" alt="header-logo"></a>
+                    <a href="../index.php"><img src="../img/logo.png" width="180" height="40" alt="header-logo"></a>
                   </div>
                 </li>
                 <!-- DROPDOWN MENU -->
@@ -53,7 +53,7 @@
                         <li aria-haspopup="true"><a href="cardiology.php">Cardiology</a></li>
                         <li aria-haspopup="true"><a href="gastrology.php">Orthopedics</a></li>
                         <li aria-haspopup="true"><a href="neurology.php">Neurology</a></li>
-                        <li aria-haspopup="true"><a href="gynaecology.php">Gastrology</a></li>
+                        <li aria-haspopup="true"><a href="gastrology.php">Gastrology</a></li>
                         <li aria-haspopup="true"><a href="oncology.php">Oncology</a></li>
                         <li aria-haspopup="true"><a href="nephrology.php">Nephrology</a></li>
                         <li aria-haspopup="true"><a href="gynaecology.php">Gynaecology</a></li>

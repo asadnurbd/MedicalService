@@ -41,7 +41,7 @@
 
                 <li>
                 <div class="desktoplogo2">
-                    <a href="index.php"><img src="images/logo-grey.png" width="180" height="40" alt="header-logo"></a>
+                    <a href="index.php"><img src="img/logo.png" width="180" height="40" alt="header-logo"></a>
                   </div>
                 </li>
                 <!-- DROPDOWN MENU -->
@@ -51,9 +51,9 @@
                 <li aria-haspopup="true" class="nl-simple header-btn" ><a href="centres_of_excellence.php">Centres of Excellence <span class="wsarrow"></span></a>
                     <ul class="sub-menu">
                         <li aria-haspopup="true"><a href="centres_of_excellence/cardiology.php">Cardiology</a></li>
-                        <li aria-haspopup="true"><a href="centres_of_excellence/gastrology.php">Orthopedics</a></li>
+                        <li aria-haspopup="true"><a href="centres_of_excellence/orthopedics.php">Orthopedics</a></li>
                         <li aria-haspopup="true"><a href="centres_of_excellence/neurology.php">Neurology</a></li>
-                        <li aria-haspopup="true"><a href="centres_of_excellence/gynaecology.php">Gastrology</a></li>
+                        <li aria-haspopup="true"><a href="centres_of_excellence/gastrology.php">Gastrology</a></li>
                         <li aria-haspopup="true"><a href="centres_of_excellence/oncology.php">Oncology</a></li>
                         <li aria-haspopup="true"><a href="centres_of_excellence/nephrology.php">Nephrology</a></li>
                         <li aria-haspopup="true"><a href="centres_of_excellence/gynaecology.php">Gynaecology</a></li>

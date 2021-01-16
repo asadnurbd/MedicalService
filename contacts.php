@@ -88,7 +88,7 @@
 								<p>Dhaka,Bangladesh</p> 
 								<p>Dhanmondi-32,Dhaka-1209</p>
 								<p>Phone: 01689302597,01679599605</p>
-								<p>Email: <a href="mailto:yourdomain@mail.com" class="blue-color">hello@medservice.com</a></p>
+								<p>Email: <a href="mailto:yourdomain@mail.com" class="blue-color">hello@mediqas.com</a></p>
 		 					</div>
 
 		 					<!-- Working Hours -->
