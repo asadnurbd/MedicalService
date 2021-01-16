@@ -69,7 +69,7 @@
 
 							<!-- Text -->
 							<p>Have a question? Want to book an appointment for yourself? Give us a call
-							   or send an email to contact the MedService.
+							   or send an email to contact the Mediqas.
 							</p>
 								
 						</div>
@@ -368,5 +368,4 @@
 
 
 
-<!-- Mirrored from jthemes.net/themes/html/medservices/files/contacts-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Jan 2021 04:10:30 GMT -->
 </html>	
