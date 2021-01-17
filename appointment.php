@@ -10,8 +10,8 @@ if(isset($_POST["email"]))
  sleep(5);
  $query = "
  INSERT INTO tbl_login 
- (first_name, last_name, gender, email, password, address, mobile_no) VALUES 
- (:first_name, :last_name, :gender, :email, :password, :address, :mobile_no)
+ (first_name, last_name, gender, email, password, address, mobile_no,department) VALUES 
+ (:first_name, :last_name, :gender, :email, :password, :address, :mobile_no,:department)
  ";
  $password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
  $user_data = array(
@@ -21,7 +21,8 @@ if(isset($_POST["email"]))
   ':email'   => $_POST["email"],
   ':password'   => $password_hash,
   ':address'   => $_POST["address"],
-  ':mobile_no'  => $_POST["mobile_no"]
+  ':mobile_no'  => $_POST["mobile_no"],
+  ':department'  => $_POST["department"]
  );
  $statement = $connect->prepare($query);
  if($statement->execute($user_data))
@@ -59,6 +60,23 @@ if(isset($_POST["email"]))
 
 
   <style>
+  	.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 2rem + 2px);
+	padding: .475rem .75rem;
+	margin: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+	
  .nav-tabs {
     border-bottom: 0px solid #ae1e1e;
 }
@@ -234,14 +252,50 @@ Information
                                 <div class="tab-content" style="margin-top:16px;">
                                     <div class="tab-pane active" id="login_details">
                                     <div class="panel panel-default">
-                                    <div class="panel-heading">Login Details</div>
+                                    <div class="panel-heading">Patient Information</div>
                                     <div class="panel-body">
 
                                     <div class="form-group">
+                                        <label>Enter First Name</label>
+                                       
+                                        <input type="text" name="first_name" id="first_name" placeholder="Enter Your First Name*" class="form-control" />
+                                        <span id="error_first_name" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Enter Last Name</label>
+                                        <input type="text" name="last_name" id="last_name" class="form-control"  placeholder="Enter Your Last Name*"  />
+                                        <span id="error_last_name" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
                                         <label>Enter Email Address</label>
-                                        <input type="text" name="email" id="email" class="form-control" />
+                                        <input type="text" name="email" id="email" class="form-control" placeholder="Enter Your email" />
                                         <span id="error_email" class="text-danger"></span>
                                     </div>
+
+                                    <div class="form-group">
+                                        <label>Address</label>
+                                        <input type="text" name="address" id="email" class="form-control" placeholder="Enter Your Address" />
+                                        <span id="error_email" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Gender</label>
+                                        <label class="radio-inline">
+                                        <input type="radio" name="gender" value="male" checked> Male
+                                        </label>
+                                        <label class="radio-inline">
+                                        <input type="radio" name="gender" value="female"> Female
+                                        </label>
+                                    </div>
+                                    <div id="" class="col-md-12  form-control ">
+                                                                        <select id="inlineFormCustomSelect1" name="status" class="custom-select " required>
+                                                                            <option >MARITAL STATUS</option>  
+                                                                            <option value="married">Married</option>
+                                                                            <option value="single">Single</option>
+                                                                            
+                                                                        </select>
+                                     </div>
                                     <div class="form-group">
                                         <label>Enter Password</label>
                                         <input type="password" name="password" id="password" class="form-control" />
@@ -257,32 +311,27 @@ Information
                                     </div>
                                     <div class="tab-pane fade" id="personal_details">
                                     <div class="panel panel-default">
-                                    <div class="panel-heading">Fill Personal Details</div>
+                                    <div class="panel-heading">Appointment Details</div>
                                     <div class="panel-body">
+
                                     <div class="form-group">
-                                        <label>Enter First Name</label>
-                                        <input type="text" name="first_name" id="first_name" class="form-control" />
-                                        <span id="error_first_name" class="text-danger"></span>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Enter Last Name</label>
-                                        <input type="text" name="last_name" id="last_name" class="form-control" />
-                                        <span id="error_last_name" class="text-danger"></span>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Gender</label>
+                                        <label>DOES THE PATIENT HAVE A DIAGNOSIS?</label> <br>
                                         <label class="radio-inline">
-                                        <input type="radio" name="gender" value="male" checked> Male
+                                        <input type="radio" name="diagnosis" value="yes" checked> Yes
                                         </label>
                                         <label class="radio-inline">
-                                        <input type="radio" name="gender" value="female"> Female
+                                        <input type="radio" name="diagnosis" value="no"> No
                                         </label>
                                     </div>
 
-                                    <div id="" class="col-md-12 input-department form-group">
-                                                                        <select id="inlineFormCustomSelect1" name="department" class="custom-select department" required>
-                                                                            <option value="">Select Department</option>  
-                                                                            <option>Pediatrics Department</option>
+                                    
+                                   
+                                    <div class="form-group">
+                                    <label>DEPARTMENT OR SPECIALTY AREA</label> <br>
+                                    <div  class="col-md-12  form-control ">
+                                                                        <select id="inlineFormCustomSelect1" name="department" class="custom-select " required>
+                                                                            <option >Select Department</option>  
+                                                                            <option value="nur">Pediatrics Department</option>
                                                                             <option>Neurology Department</option>
                                                                             <option>Haematology Department</option>
                                                                             <option>X-Ray Diagnostic Department</option>
@@ -291,8 +340,29 @@ Information
                                                                             <option>Laboratory Services</option>
                                                                             <option>Other</option>
                                                                         </select>
-                                                                    </div>
+                                     </div>
+                                     </div>
                                     <br />
+
+                                    <div class="form-group">
+                                        <label>IS THIS CONDITION OR INJURY RELATED TO WORK?</label> <br>
+                                        <label class="radio-inline">
+                                        <input type="radio" name="injury" value="yes" checked> Yes
+                                        </label>
+                                        <label class="radio-inline">
+                                        <input type="radio" name="injury" value="no"> No
+                                        </label>
+                                    </div
+                                    <div class="form-group">
+                                        <label>IS THIS CONDITION OR INJURY RELATED TO AN AUTO ACCIDENT?</label> <br>
+                                        <label class="radio-inline">
+                                        <input type="radio" name="accident" value="yes" checked> Yes
+                                        </label>
+                                        <label class="radio-inline">
+                                        <input type="radio" name="accident" value="no"> No
+                                        </label>
+                                    </div
+                                    
                                     <div align="center">
                                         <button type="button" name="previous_btn_personal_details" id="previous_btn_personal_details" class="btn btn-default btn-lg">Previous</button>
                                         <button type="button" name="btn_personal_details" id="btn_personal_details" class="btn btn-info btn-lg">Next</button>
@@ -305,15 +375,33 @@ Information
                                     <div class="panel panel-default">
                                     <div class="panel-heading">Fill Contact Details</div>
                                     <div class="panel-body">
+
+                                    <div class="form-group">
+                                        <label>Enter your Name</label>
+                                        <input type="text" name="req_name" id="email" class="form-control" placeholder="Enter Your Name" />
+                                        <span id="error_email" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Enter Email Name</label>
+                                        <input type="text" name="req_email"id="email" class="form-control" placeholder="Enter Your Email" />
+                                        <span id="error_email" class="text-danger"></span>
+                                    </div>
+                                   
                                     <div class="form-group">
                                         <label>Enter Address</label>
                                         <textarea name="address" id="address" class="form-control"></textarea>
                                         <span id="error_address" class="text-danger"></span>
                                     </div>
+                                    
                                     <div class="form-group">
                                         <label>Enter Mobile No.</label>
                                         <input type="text" name="mobile_no" id="mobile_no" class="form-control" />
                                         <span id="error_mobile_no" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Enter Your Description</label>
+                                        <textarea name="escription" id="address" class="form-control"></textarea>
+                                        <span id="error_address" class="text-danger"></span>
                                     </div>
                                     <br />
                                     <div align="center">
@@ -337,7 +425,10 @@ Information
 
 					</div>	<!-- End row -->	
 				</div>	 <!-- End container -->
-			</div>	<!-- END APPOINTMENT PAGE -->
+            </div>	<!-- END APPOINTMENT PAGE -->
+              
+           
+
 			</div>	<!-- END APPOINTMENT PAGE -->
 
 	
@@ -345,17 +436,18 @@ Information
 
 			<!-- FOOTER-1
             ============================================= -->
-            <div class="display-1">
-            <?php include"include/footer.php"?>
+          
 
-
-            </div>
 			<!-- END FOOTER-1 -->
 
 
 
 
-		</div>	<!-- END PAGE CONTENT -->
+        </div>	<!-- END PAGE CONTENT -->
+      
+        <?php include"include/footer.php"?>
+
+        
 
 
 
