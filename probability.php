@@ -1,3 +1,33 @@
+<?php
+ include "connection.php";
+
+ if(isset($_POST['submit'])){
+
+	$age=$_POST['age'];
+	$ethnicity=$_POST['ethnicity'];
+	$gender=$_POST['gender'];
+	$smoking=$_POST['smoking'];
+	$influenza=$_POST['influenza'];
+	$symptoms=$_POST['symptoms'];
+	$patient=$_POST['patient'];
+	$message=$_POST['message'];
+	
+	
+    $probability_test="INSERT INTO `probability_test`(`age`,`ethnicity`,`gender`,`smoking`,`influenza`,`symptoms`,`patient`,`message`) VALUES('$age','$ethnicity','$gender','$smoking','$influenza','$symptoms','$patient','$message')";
+	
+	 
+	//  $data = $con->prepare($contact);
+	$data=mysqli_query($con,$probability_test);
+	if($data){
+		echo "Data Insert";
+	}else{
+	 echo "Not Insert";
+	}
+	
+ 
+ }
+
+?>
 
 <!DOCTYPE html>
 
@@ -10,6 +40,35 @@
 <head>
 
 <?php include"include/head.php"?>
+<style>
+
+#contacts-2 .form {
+    padding: 50px 40px 35px;
+    margin: 0;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.form-control {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    height:50px;
+    padding:5 px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+  
+}
+
+	 
+ </style> 
 	
 	</head>
 
@@ -104,21 +163,66 @@
 							<!-- Plan Title  -->
 							<h5 class="h5-md steelblue-color">Testing Result</h5>
 
-							<div class="pricing-table mb-40">								
+							<div class="pricing-table mb-40" id='nur'>								
 								<table class="table table-hover">
 									<thead>
 									    <tr>
-									      	<th scope="col">#</th>
+									      	<th scope="col">SN</th>
 									      	<th scope="col">Result</th>
 									      	<th scope="col">Probability</th>
 									    </tr>
 									</thead>
 									<tbody>
+
+									<?php 
+										 $show="SELECT* from probability_test ";
+										 $result=$con->query($show);
+										 $i=1;
+										 if($result->num_rows>0){
+											$j=1;
+											
+											$row_count=$result->num_rows;
+											echo "$row_count";
+									          
+											 while($row=$result->fetch_array()){
+						
+												 $j++;
+												
+												 if($j==$row_count+1)
+                                                     {
+														echo $row['age'];
+																
+														if($row['age']>=40 || $row['gender']=='male'|| $row['smoking']=='yes'||$row['influenza']=='yes' ){
+
+													
+												
+									         
+											 
+									?>
 									    <tr>
-									      	<th scope="row">1</th>
+									      	<th scope="row"><?php echo $i++?></th>
+									     	<td>Predicted probability  nur</td>
+									      	<td> <span><?php echo(rand(70,100));?>%</span></td>
+										</tr>
+										
+									<?php 
+									}
+									else{  ?>
+
+										<tr>
+									      	<th scope="row"><?php echo $i++?></th>
 									     	<td>Predicted probability</td>
-									      	<td> <span>75%</span></td>
-									    </tr>
+									      	<td> <span><?php echo(rand(10,40));?>%</span></td>
+										</tr>
+
+                                  <?php
+									}
+								
+								} } 	}
+                                                     
+							
+									
+								    ?>
 									    
 									   
 									</tbody>
@@ -141,53 +245,53 @@
 						<!-- CONTACT FORM -->	
 				 		<div class="col-lg-5">
 				 			<div class="form-holder mb-40">
-								<form name="contactForm" class="row contact-form">
+								<form action="#nur" method="post" class="row form">
 				                                            
 					                <!-- Contact Form Input -->
 					                <div id="input-age" class="col-md-12">
 					                	<input type="text" name="age" class="form-control name" placeholder="Enter Your Age*" required> 
 									</div>
 
-									<div id="input-ethnicity" class="col-md-12 input-patient">
-					                    <select id="inlineFormCustomSelect3" name="ethnicity" class="custom-select patient" required>
-					                        <option value="">Ethnicity *</option>
-											<option>Middle East</option>
-											<option>Europe </option>
-											<option>Asia</option>
+									<div id="input-ethnicity" class="col-md-12 input-patient  ">
+					                    <select id="inlineFormCustomSelect3" name="ethnicity" class="custom-select patient form-control " required>
+					                        <option value="" >Ethnicity *</option>
+											<option value="middle_east">Middle East</option>
+											<option value="europe">Europe </option>
+											<option value="asia">Asia</option>
 					                    </select>
 					                </div>
 									<div id="input-patient" class="col-md-12 input-patient">
-					                    <select id="inlineFormCustomSelect3" name="gender" class="custom-select patient" required>
-					                        <option value="">Gender *</option>
-											<option>Male</option>
-											<option>Female </option>
+					                    <select id="inlineFormCustomSelect3" name="gender" class="custom-select patient form-control" required>
+					                        <option >Gender *</option>
+											<option value="male">Male</option>
+											<option value="female">Female </option>
 											
 					                    </select>
 					                </div>
 									<div id="input-patient" class="col-md-12 input-patient">
-					                    <select id="inlineFormCustomSelect3" name="gender" class="custom-select patient" required>
-					                        <option value="">Smoking *</option>
-											<option>Yes</option>
-											<option>No </option>
+					                    <select id="inlineFormCustomSelect3" name="smoking" class="custom-select patient form-control" required>
+					                        <option >Smoking *</option>
+											<option value="yes" >Yes</option>
+											<option value="no" >No </option>
 											
 					                    </select>
 					                </div>
 									<div id="input-influenza" class="col-md-12 input-patient">
-					                    <select id="inlineFormCustomSelect3" name="influenza" class="custom-select patient" required>
-					                        <option value="">Influenza vaccine *</option>
-											<option>Yes</option>
-											<option>No </option>
+					                    <select id="inlineFormCustomSelect3" name="influenza" class="custom-select patient form-control" required>
+					                        <option >Influenza vaccine *</option>
+											<option value="yes">Yes</option>
+											<option value="no">No </option>
 											
 					                    </select>
 					                </div>
 									<div id="input-symptoms" class="col-md-12 input-patient">
-					                    <select id="inlineFormCustomSelect3" name="symptoms" class="custom-select patient" required>
-					                        <option value="">Symptoms and risks *</option>
-											<option>Fever</option>
-											<option>Exposed to the covid-19</option>
-											<option>Heart attack</option>
-											<option>Cold</option>
-											<option>Vomiting </option>
+					                    <select id="inlineFormCustomSelect3" name="symptoms" class="custom-select patient form-control" required>
+					                        <option >Symptoms and risks *</option>
+											<option value="fever">Fever</option>
+											<option value="exposed">Exposed to the covid-19</option>
+											<option value="heart_attack">Heart attack</option>
+											<option value="cold">Cold</option>
+											<option value="vomiting">Vomiting </option>
 											
 					                    </select>
 					                </div>
@@ -195,10 +299,10 @@
 
 					                <!-- Form Select -->
 					                <div id="input-patient" class="col-md-12 input-patient">
-					                    <select id="inlineFormCustomSelect3" name="patient" class="custom-select patient" required>
-					                        <option value="">Have You Visited Us Before for covid-19?*</option>
-											<option>New Patient</option>
-											<option>Returning Patient</option>
+					                    <select id="inlineFormCustomSelect3" name="patient" class="custom-select patient form-control" required>
+					                        <option >Have You Visited Us Before for covid-19?*</option>
+											<option value="new">New Patient</option>
+											<option value="old">Returning Patient</option>
 											
 					                    </select>
 					                </div>
@@ -208,11 +312,11 @@
 					                        
 					                <div id="input-message" class="col-md-12 input-message">
 					                	<textarea class="form-control message" name="message" rows="6" placeholder="Your Message ..." required></textarea>
-					                </div> 
+					                </div>
 					                                            
 					                <!-- Contact Form Button -->
 					                <div class="col-lg-12 mt-15 form-btn">  
-					                	<button type="submit" class="btn btn-blue blue-hover submit">Probability Calculator</button> 
+					                	<button type="submit" class="btn btn-blue blue-hover submit" name="submit" style="margin-left: 80px;" >Probability Calculator</button> 
 					                </div>
 					                                                              
 					                <!-- Contact Form Message -->
