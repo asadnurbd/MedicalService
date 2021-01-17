@@ -1,12 +1,74 @@
+
+<?php 
+
+include "connection.php";
+
+if(isset($_POST['submit'])){
+
+	$names=$_POST['name'];
+	$emails=$_POST['email'];
+	$phones=$_POST['phone'];
+	$subjects=$_POST['subject'];
+	$messages=$_POST['message'];
+	
+ 
+    echo "$names";
+    echo "$emails";
+    echo "$phones";
+    echo "$subjects";
+    echo "$messages";
+    
+ 
+    $contact="INSERT INTO `contacts`(`name`,`email`,`phone`,`subject`,`message`) VALUES('$names','$emails','$phones','$subjects','$messages')";
+	 
+	//  $data = $con->prepare($contact);
+	$data=mysqli_query($con,$contact);
+	if($data){
+		echo "Data Insert";
+	}else{
+	 echo "Not Insert";
+	}
+	
+ 
+ }
+
+
+?>
+
+
+
+
+
+
+
 <!DOCTYPE html>
 
 <html lang="en">
 
 
-<head>
+   <head>
 
 		
- <?php include"include/head.php"?>
+    <?php include"include/head.php"?>
+	<style>
+	.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 2rem + 2px);
+	padding: .475rem .75rem;
+	margin: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+	 
+ </style>
 	
 	</head>
 
@@ -65,10 +127,10 @@
 						<div class="col-lg-10 offset-lg-1 section-title">	
 
 							<!-- Title 	-->	
-							<h3 class="h3-md steelblue-color">Have a Question? Get In Touch</h3>	
+							<h3 class="h3-md steelblue-color">Have a Any Feedback / Suggestions ? Get In Touch</h3>	
 
 							<!-- Text -->
-							<p>Have a question? Want to book an appointment for yourself? Give us a call
+							<p>Have a a Any Feedback / Suggestions? Want to book an appointment for yourself? Give us a call
 							   or send an email to contact the Mediqas.
 							</p>
 								
@@ -88,15 +150,16 @@
 								<p>Dhaka,Bangladesh</p> 
 								<p>Dhanmondi-32,Dhaka-1209</p>
 								<p>Phone: 01689302597,01679599605</p>
-								<p>Email: <a href="mailto:yourdomain@mail.com" class="blue-color">hello@mediqas.com</a></p>
+								<p>Email: <a href="mailto:yourdomain@mail.com" class="blue-color">hello@medilife.com</a></p>
 		 					</div>
 
 		 					<!-- Working Hours -->
 		 					<div class="contact-box mb-40">
 								<h5 class="h5-sm steelblue-color">Working Hours</h5>
-								<p>Sunday : 10:00 AM - 10:00 PM</p>
-								<p>Monday – Friday : 8:00 AM - 10:00 PM</p> 
-								<p>Saturday : 10:00 AM - 10:00 PM</p>
+								<p>Saturday - Monday : 10:00 AM - 10:00 PM</p>
+								<p>Tuesday - Thursday : 10:00 AM - 10:00 PM</p>
+								<p>Friday –  : 8:00 AM - 10:00 PM</p> 
+								
 								
 		 					</div>
 
@@ -106,7 +169,7 @@
 						<!-- CONTACT FORM -->	
 				 		<div class="col-md-7 col-lg-8">
 				 			<div class="form-holder mb-40">
-				 				<form name="contactForm" class="row contact-form">
+				 				<form action="" method="post" class="row ">
 				                                            
 					                <!-- Contact Form Input -->
 					                <div id="input-name" class="col-md-12 col-lg-6">
@@ -117,19 +180,11 @@
 					                	<input type="text" name="email" class="form-control email" placeholder="Enter Your Email*" required> 
 					                </div>
 
-					                <div id="input-phone" class="col-md-12 col-lg-6">
+					                <div id="input-phone" class="col-md-12 col-lg-8">
 					                	<input type="tel" name="phone" class="form-control phone" placeholder="Enter Your Phone Number*" required> 
 					                </div>	
 
-					                <!-- Form Select -->
-					                <div id="input-patient" class="col-md-12 col-lg-6 input-patient">
-					                    <select id="inlineFormCustomSelect3" name="patient" class="custom-select patient" required>
-					                        <option value="">Have You Visited Us Before?*</option>
-											<option>New Patient</option>
-											<option>Returning Patient</option>
-											<option>Other</option>
-					                    </select>
-					                </div>
+					             
 
 					                <div id="input-subject" class="col-lg-12">
 					                	<input type="text" name="subject" class="form-control subject" placeholder="Subject*" required> 
@@ -141,7 +196,7 @@
 					                                            
 					                <!-- Contact Form Button -->
 					                <div class="col-lg-12 mt-15 form-btn">  
-					                	<button type="submit" class="btn btn-blue blue-hover submit">Send Your Message</button> 
+					                	<button type="submit" class="btn btn-blue blue-hover submit" name="submit">Send Your Message</button> 
 					                </div>
 					                                                              
 					                <!-- Contact Form Message -->

@@ -2,9 +2,7 @@
 
 <?php 
 
-
-$con=mysqli_connect("localhost","root","");
-$db=mysqli_select_db($con,'nur');
+include "connection.php";
 
 if(isset($_POST['submit'])){
 
@@ -74,7 +72,7 @@ if(isset($_POST['submit'])){
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-	 }
+	 
  </style>
 	
 	</head>

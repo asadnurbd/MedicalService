@@ -1,3 +1,9 @@
+<?php
+ include "connection.php";
+
+?>
+
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -617,7 +623,21 @@
                     <div class="col-md-12">
                         <div class="owl-carousel owl-theme reviews-holder">
 
+						 <?php
 
+							$feedback="SELECT* from contacts";
+							$result=$con->query($feedback);
+							
+							if($result->num_rows>0){
+								while($row=$result->fetch_array()){
+
+						
+							
+
+						 
+						 
+						 
+						 ?>
                             <!-- TESTIMONIAL #1 -->
                             <div class="review-2">
                                 <div class="review-txt text-center">
@@ -627,22 +647,30 @@
 
                                     <!-- Author Avatar -->
                                     <div class="testimonial-avatar">
-                                        <img src="img/review-author-1.jpg" alt="testimonial-avatar">
+                                        <img src="img/review-author-1.png" alt="testimonial-avatar">
                                     </div>
 
                                     <!-- Testimonial Text -->
-                                    <p>Etiam sapien sem at sagittis congue an augue massa varius egestas a suscipit magna undo tempus aliquet porta vitae
+                                    <p>
+									    <?php echo $row['message'];?>
                                     </p>
 
                                     <!-- Testimonial Author -->
                                     <div class="review-author">
-                                        <h5 class="h5-sm">Scott Boxer</h5>
-                                        <span>Programmer</span>
+                                        <h5 class="h5-sm"><?php echo $row['name'];?></h5>
+										<span><?php echo $row['email'];?></span>
+                                        <span><?php echo $row['phone'];?></span>
                                     </div>
 
                                 </div>
                             </div>
                             <!--END  TESTIMONIAL #1 -->
+
+							<?php 			
+								}
+
+							}
+							?>
 
 
 

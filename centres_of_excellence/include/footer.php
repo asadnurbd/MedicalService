@@ -46,7 +46,7 @@
 								<p>Dhaka , Bangladesh,</p> 
 								
 								<!-- Email -->
-								<p class="foo-email mt-20">E: <a href="mailto:yourdomain@mail.com">hello@mediqas.com</a></p>
+								<p class="foo-email mt-20">E: <a href="mailto:yourdomain@mail.com">hello@medilife.com</a></p>
 
 								<!-- Phone -->
 								<p>P: +01689302597,01679599605</p>
@@ -63,10 +63,11 @@
 								<h5 class="h5-xs">Working Time</h5>
 
 								<!-- Working Hours -->
+								<!-- Working Hours -->
 								<p class="p-sm">Sat - Sun  - <span>9:00 AM - 6:00 PM</span></p>
 								<p class="p-sm">Mon - Wed - <span>9:00 AM - 7:00 PM</span></p>
 								<p class="p-sm">Thursday - <span>9:00 AM - 6:30 PM</span></p>
-								<p class="p-sm"> Friday - <span>Closed</span></p>										
+								<p class="p-sm"> Friday - <span>Closed</span></p>													
 
 							</div>
 						</div>
@@ -96,7 +97,7 @@
 					<div class="bottom-footer">
 						<div class="row">
 							<div class="col-md-12">
-								<p class="footer-copyright">&copy; 2021 <span>Mediqas</span>. All Rights Reserved</p>
+								<p class="footer-copyright">&copy; 2021 <span>medilife</span>. All Rights Reserved</p>
 							</div>
 						</div>
 					</div>

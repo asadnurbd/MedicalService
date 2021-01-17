@@ -47,7 +47,7 @@
 								<p>Dhaka , Bangladesh,</p> 
 								
 								<!-- Email -->
-								<p class="foo-email mt-20">E: <a href="mailto:yourdomain@mail.com">hello@mediqas.com</a></p>
+								<p class="foo-email mt-20">E: <a href="mailto:yourdomain@mail.com">hello@medilife.com</a></p>
 
 								<!-- Phone -->
 								<p>P: +01689302597,01679599605</p>
@@ -97,7 +97,7 @@
 					<div class="bottom-footer">
 						<div class="row">
 							<div class="col-md-12">
-								<p class="footer-copyright">&copy; 2021 <span>Mediqas</span>. All Rights Reserved</p>
+								<p class="footer-copyright">&copy; 2021 <span>Medilife</span>. All Rights Reserved</p>
 							</div>
 						</div>
 					</div>

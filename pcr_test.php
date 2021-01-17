@@ -1,3 +1,34 @@
+<?php
+ include "connection.php";
+
+ if(isset($_POST['submit'])){
+
+	$names=$_POST['name'];
+	$emails=$_POST['email'];
+	$phones=$_POST['phone'];
+	$age=$_POST['age'];
+	$sampling=$_POST['sampling'];
+	$city=$_POST['city'];
+	$nationality=$_POST['nationality'];
+	$test=$_POST['test'];
+	$description=$_POST['description'];
+	
+    $pcr_test="INSERT INTO `pcr_test`(`name`,`email`,`phone`,`age`,`sampling`,`city`,`nationality`,`test`,`description`) VALUES('$names','$emails','$phones','$age','$sampling','$city','$nationality','$test','$description')";
+	 
+	//  $data = $con->prepare($contact);
+	$data=mysqli_query($con,$pcr_test);
+	if($data){
+		echo "Data Insert";
+	}else{
+	 echo "Not Insert";
+	}
+	
+ 
+ }
+
+?>
+
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -9,6 +40,25 @@
 <head>
 
 <?php include"include/head.php"?> 
+<style>
+	.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 2rem + 2px);
+	padding: .475rem .75rem;
+	margin: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+	 
+ </style> 
 	
 	</head>
 
@@ -198,13 +248,9 @@ At our country clinics, in case of non-close contact, the result of the test is 
 
 								<!-- APPOINTMENT FORM -->
 								<div id="appointment-form-holder" class="text-center">
-									<form name="appointmentform" class="row appointment-form" novalidate="novalidate">
-
-								
-
-						          
-
-						             
+									<form  action="" method="post" class="row " >
+ 
+	           
 						                <!-- Contact Form Input -->
 						                
 				                                            
@@ -238,23 +284,35 @@ At our country clinics, in case of non-close contact, the result of the test is 
 						                	<input type="tel" name="nationality" class="form-control phone" placeholder="Enter Your Nationality*" required=""> 
 										</div>
 																                          
-										<div class="form-group row ml-1 " style="padding: 15px;">
+										
 
-										 <div class=" col-lg-12">
+										<label class="ml-4 pb-2 pt-2" >Regarding the patients stated below, have anyone met in person a confirmed coronavirus infected person?</label> <br>	
+
+
+										 <div class=" row col-lg-12 ml-2 pb-2">
+											<div class="ml-lg-4">
+											<input class="form-check-input" type="radio" name="test" id="exampleRadios1" value="Yes" checked required>
+											<label class="form-check-label" for="exampleRadios1">
+												Yes
+                                            </label>
+
+											</div>
+											<div class="ml-lg-4">
+											<input class="form-check-input" type="radio" name="test" id="exampleRadios1" value="No" checked>
+											<label class="form-check-label" for="exampleRadios1">
+												No 
+                                            </label>
 										
-											<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-											Regarding the patients stated below, have anyone met in person a confirmed coronavirus infected person?
-										
-										</div>
+										   </div>
 										</div>						                          
 						                        
 						                <div id="input-message" class="col-lg-12 input-message">
-						                	<textarea class="form-control message" name="message" rows="6" placeholder="Your Message ..."></textarea>
+						                	<textarea class="form-control message" name="description" rows="6" placeholder="Your Message ..."></textarea>
 						                </div> 
 						                                            
 						                <!-- Contact Form Button -->
 						                <div class="col-lg-12 form-btn">  
-						                	<button type="submit" class="btn btn-blue blue-hover submit">Submit</button> 
+						                	<button type="submit" class="btn btn-blue blue-hover submit" name="submit">Submit</button> 
 						                </div>
 						                                                              
 						                <!-- Contact Form Message -->
