@@ -367,12 +367,7 @@ if(isset($_POST['submit'])){
 			new WOW().init();
 		</script>
 
-		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-		<!-- [if lt IE 9]>
-			<script src="js/html5shiv.js" type="text/javascript"></script>
-			<script src="js/respond.min.js" type="text/javascript"></script>
-		<![endif] -->
-
+	
 		<!-- Google Map -->
 		<script>
      		function initMap() {

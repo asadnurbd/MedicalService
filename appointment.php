@@ -49,7 +49,6 @@ if(isset($_POST["email"]))
 <html lang="en">
 
 	
-<!-- Mirrored from jthemes.net/themes/html/medservices/files/appointment.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Jan 2021 04:10:23 GMT -->
 <head>
 <?php include"include/head.php"?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

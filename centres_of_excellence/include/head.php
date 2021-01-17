@@ -3,7 +3,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="author" content="Jthemes">	
-		<meta name="description" content="MedService - Medical &amp; Medical Health Landing Page Template">
+		<meta name="description" content=" - Medical &amp; Medical Health Landing Page Template">
 		<meta name="keywords" content="Responsive, HTML5 Template, Jthemes, One Page, Landing, Medical, Health, Healthcare, Doctor, Clinic, Care, Hospital">	
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 				

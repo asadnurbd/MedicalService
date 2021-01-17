@@ -251,22 +251,7 @@
         new WOW().init();
     </script>
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-    <!-- [if lt IE 9]>
-			<script src="js/html5shiv.js" type="text/javascript"></script>
-			<script src="js/respond.min.js" type="text/javascript"></script>
-		<![endif] -->
-
-    <!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
-    <!--
-		<script>
-			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-			ga('create', 'UA-XXXXX-Y', 'auto');
-			ga('send', 'pageview');
-		</script>
-		<script async src='https://www.google-analytics.com/analytics.js'></script>
-		-->
-    <!-- End Google Analytics -->
+   
 
     <script src="js/changer.js"></script>
     <script defer src="js/styleswitch.js"></script>
@@ -277,6 +262,5 @@
 
 
 
-<!-- Mirrored from jthemes.net/themes/html/medservices/files/faqs.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Jan 2021 04:10:30 GMT -->
 
 </html>
